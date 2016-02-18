@@ -12,9 +12,9 @@ default[:tilequeue][:install_method]                            = 'pip_requireme
 default[:tilequeue][:pip_requirements_location]                 = "#{node[:tilequeue][:cfg_path]}/pip-requirements.txt"
 default[:tilequeue][:pip_requirements_extra_location]           = "#{node[:tilequeue][:cfg_path]}/pip-requirements_extra.txt"
 
-default[:tilequeue][:revision][:tilestache] = 'integration-1'
+default[:tilequeue][:revision][:tilestache] = 'v0.7.0'
 default[:tilequeue][:revision][:mapbox_vector_tile] = 'master'
-default[:tilequeue][:revision][:tilequeue] = 'master'
+default[:tilequeue][:revision][:tilequeue] = 'v0.7.0'
 
 default[:tilequeue][:pip_requirements] = %w(
   argparse==1.2.1
@@ -85,7 +85,7 @@ default[:tilequeue][:process][:formats]                         = %w(json)
 default[:tilequeue][:logging][:config]                          = "#{default[:tilequeue][:cfg_path]}/logging.conf"
 
 default[:tilequeue][:vector_datasource][:repository]            = 'https://github.com/mapzen/vector-datasource.git'
-default[:tilequeue][:vector_datasource][:revision]              = 'master'
+default[:tilequeue][:vector_datasource][:revision]              = 'v0.7.0'
 default[:tilequeue][:vector_datasource][:path]                  = "#{node[:tilequeue][:cfg_path]}/vector-datasource"
 
 default[:tilequeue][:intersect][:redis][:host]                  = 'localhost'
